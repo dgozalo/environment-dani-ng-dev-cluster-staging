@@ -7,6 +7,10 @@ cleanup:
   - --cleanup
 controllerbuild:
   enabled: true
+controllerworkflow:
+  enabled: false
+docker-registry:
+  enabled: false
 dockerRegistry: gcr.io
 expose:
   Annotations:
@@ -16,7 +20,7 @@ expose:
   - --v
   - 4
   config:
-    domain: 35.246.125.197.nip.io
+    domain: 35.242.132.37.nip.io
     exposer: Ingress
     http: "true"
 jenkins:
